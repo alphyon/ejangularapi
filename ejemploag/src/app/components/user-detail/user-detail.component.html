@@ -1,0 +1,14 @@
+<br>
+<div class="card">
+  <div class="card-block">
+    <h4 class="card-title">{{ user.name }}</h4>
+    <h6 class="card-subtitle mb-2 text-muted">mail: {{ user.email }}</h6>
+    <p class="card-text">
+      <li>identificador: {{ user.id }}</li>
+      <li>verificado: {{ user.verified }}</li>
+      <li>registrado: {{ user.created_at | date }}</li>
+    </p>
+    <a [routerLink]="['/content']" class="card-link"><< regresar</a>
+
+  </div>
+</div>
